@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jQuery AJAX API Call Example.iml" filepath="$PROJECT_DIR$/.idea/jQuery AJAX API Call Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/exchangeRate.iml" filepath="$PROJECT_DIR$/.idea/exchangeRate.iml" />
     </modules>
   </component>
 </project>
