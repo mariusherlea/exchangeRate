@@ -7,19 +7,24 @@ $(document).ready(function () {
 
         $.ajax({
 
-            // url: 'http://api.exchangeratesapi.io/v1/convert?access_key=15a37a3d8b9b19013ffd89e4ba5f54a8 &from=GBP &to=USD &amount=10',
-
-
-            url: 'http://api.exchangeratesapi.io/v1/latest?access_key=15a37a3d8b9b19013ffd89e4ba5f54a8' ,
+            url: 'http://api.exchangeratesapi.io/v1/latest?access_key=15a37a3d8b9b19013ffd89e4ba5f54a8',
             dataType: 'jsonp',
-            success: function(json) {
+            success: function (json) {
 
                 // exchange rata data is stored in json.rates
-                console.log(json.rates.GBP);
 
-                // base currency is stored in json.base
-                console.log(json.rates.USD);
-
+                let amount = 135;
+                let GBP = amount * (json.rates.GBP);
+                let USD = amount * (json.rates.USD);
+                let RUB = amount * (json.rates.RUB);
+                let JPY = amount * (json.rates.JPY);
+                let AUD = amount*(json.rates.AUD);
+                console.log(amount);
+                console.log(USD);
+                console.log(RUB);
+                console.log(GBP);
+                console.log(JPY);
+                console.log(AUD);
                 // timestamp can be accessed in json.timestamp
                 console.log(json.timestamp);
 
@@ -27,7 +32,6 @@ $(document).ready(function () {
 
             }
         });
-
 
 
     });
