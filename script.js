@@ -13,6 +13,14 @@ $(document).ready(function () {
 
     });
 
+    $("#hidegb").click(function (e) {
+
+        $("#gb").hide();
+
+    });
+
+
+
     $("#submit").click(function (e) {
 
         $.ajax({
@@ -32,6 +40,10 @@ $(document).ready(function () {
 
                 $("#rub").val(amount * (json.rates.RUB));
                 $("#rubrate").val(json.rates.RUB);
+
+                $("#gbp").val(amount * (json.rates.GBP));
+                $("#gbprate").val(json.rates.GBP);
+
 
             }
 
