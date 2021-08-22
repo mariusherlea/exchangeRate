@@ -22,17 +22,6 @@ $(document).ready(function () {
             success: function (json) {
                 let amount = document.getElementById("box1").value;
 
-                /* document.getElementById("USD").value = (amount * (json.rates.USD));
-                 document.getElementById("rateUSD").value = json.rates.USD;
-                 document.getElementById("RUB").value = (amount * (json.rates.RUB));
-                 document.getElementById("rateRUB").value = json.rates.RUB;
-                 document.getElementById("GBP").value = (amount * (json.rates.GBP));
-                 document.getElementById("rateGBP").value = json.rates.GBP;
-                 document.getElementById("JPY").value = (amount * (json.rates.JPY));
-                 document.getElementById("rateJPY").value = json.rates.JPY;
-                 document.getElementById("AUD").value = (amount * (json.rates.AUD));
-                 document.getElementById("rateAUD").value = json.rates.AUD;*/
-
                 // timestamp can be accessed in json.timestamp
                 let today = new Date();
                 document.getElementById("time").value = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();

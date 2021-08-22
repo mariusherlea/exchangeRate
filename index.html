@@ -7,60 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 </head>
 <body>
 
-<div class="container">
-    <div id="content">
+<div class=”row”>
 
-        <div class=”row”>
+    <div class=”green”>
+        <h3 class=”display-4">Currency exchange</h3>
 
-            <div class=”col-md”>
-                <h3 class=”display-4">Current date</h3>
-
-                <input type="text" id="time"></input><br/>
+        <input type="text" id="time"></input><br/>
 
 
-            </div>
+    </div>
 
-            <div class=”col-md”>
+    <table>
+        <tr>
+            <td>
+                <div>
 
-                <img src="https://www.countryflags.io/eu/flat/48.png">
-                <label for="box1">Enter sum for exchange</label>
-                <input type="text" id="box1">
-                <button id="submit">Submit</button>
+                    <img src="https://www.countryflags.io/eu/flat/48.png">
+                    <label for="box1">Enter sum for exchange</label><br>
+                    <input type="text" id="box1">
+                    <button id="submit">Submit</button>
 
-            </div>
+                </div>
+            </td>
 
-            <div class="card" style="width: 8rem;" id="us">
-                <button id="hideus">Hide</button>
+            <td>
+                <div id="us">
 
                     <img src="https://www.countryflags.io/us/flat/48.png">
+                    <button id="hideus" class="btn btn-danger">X</button>
                     <p>USD US Dollar</p>
                     <input type="text" id="usd">
                     <p>At rate of</p>
                     <input type="text" id="usdrate">
 
-            </div>
+                </div>
+            </td>
 
-            <div class="card" style="width: 8rem;" id="ru">
-                <button id="hideru">Hide</button>
+            <td>
+                <div id="ru">
 
-                <img src="https://www.countryflags.io/ru/flat/48.png">
-                <p>RUB Russian Rubla</p>
-                <input type="text" id="rub">
-                <p>At rate of</p>
-                <input type="text" id="rubrate">
+                    <img src="https://www.countryflags.io/ru/flat/48.png">
+                    <button id="hideru" class="btn btn-danger">X</button>
 
-            </div>
-        </div>
+                    <p>RUB Russian Rubla</p>
+                    <input type="text" id="rub">
+                    <p>At rate of</p>
+                    <input type="text" id="rubrate">
+
+                </div>
+            </td>
+        </tr>
+    </table>
 
 
-    </div>
+
+
+
 </div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="script.js">
 
